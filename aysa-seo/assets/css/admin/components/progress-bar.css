@@ -1,0 +1,97 @@
+.wizard-navigation {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.custom-progress-bar {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.line {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 4px;
+    background-color: black;
+}
+
+.dot {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--main-red);
+    z-index: 1;
+}
+
+.dot a {
+    white-space: nowrap;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.dot.active a {
+    color: var(--main-red);
+}
+
+.dot.show-dot {
+    width: 16px;
+    box-shadow: 0px 0px 10px 5px #357f4d;
+}
+
+.dot span {
+    display: block;
+    width: auto;
+    text-align: center;
+    font-size: 12px;
+    right: 100%;
+}
+
+.above {
+    position: absolute;
+    bottom: 100%;
+    transform: translateY(-10px);
+    width: 100%;
+}
+
+.below {
+    position: absolute;
+    top: 100%;
+    transform: translateY(10px);
+    width: 100%;
+}
+
+.line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: var(--main-red);
+    z-index: -1;
+}
+
+
+.custom-progress-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* this will hide any overflow */
+    opacity: 0;
+}
+
+svg {
+    display: block; /* remove any potential inline whitespace */
+    width: 100%;
+    height: auto;
+}
+
+#slider {
+    opacity: 0;
+}

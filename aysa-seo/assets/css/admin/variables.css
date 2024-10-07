@@ -1,0 +1,28 @@
+:root {
+    --main-bg: #f0f2f4;
+    --main-red: #d50d3a;
+    --bg-green: rgba(100, 190, 182, 0.15);
+    --secondary-red: #DA4343;
+    --light-blue: #DCEBFF;
+    --main-mint: #4EC5A8;
+    --main-turquoise: #08A393;
+    --light-turquoise: #00C9B4;
+    --gradient-turquoise: linear-gradient(180deg, #307476 0%, #6BC8BE 100%);
+    --main-green: var(--main-turquoise);
+    --dark-grey: #757575;
+    --light-grey: #E4E4E4;
+    --main-black: #0F172A;
+    --box-shadow: 0 2px 10px -5px var(--main-green);
+    --border-green: 1px solid var(--main-green);
+    --border-color-gray: #8c8f94;
+    --border-color-gray-inner-border: #CBD5E1;
+    --border-color-gray-inner-text: #959595;
+    --border-color-ltgray: #E1E1E1;
+    --table-row-bg: #F9FAFC;
+    --progress-red: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(90deg, #BC0333 0%, #DA0038 72.32%);
+    --progress-yellow: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(90deg, #D49B51 0%, #F7B055 100%);
+    --progress-green: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(90deg, #3B8E91 0%, #46ABAF 100%);
+    --progress-no-padding-red: #DB0038;
+    --progress-no-padding-yellow: #DC9F00;
+    --progress-no-padding-green: #08A393;
+}

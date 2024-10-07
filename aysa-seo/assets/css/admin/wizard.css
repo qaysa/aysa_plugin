@@ -1,0 +1,50 @@
+/* Variables */
+@import url("variables.css");
+
+/* Components */
+@import url("components/progress-bar.css");
+@import url("components/form-elements.css");
+@import url("components/custom-select.css");
+@import url("components/select-with-search.css");
+@import url("utility.css");
+
+#wpwrap {
+    background: var(--main-bg);
+}
+
+#wpcontent {
+    padding: 20px;
+}
+
+#wpbody-content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.inner-container {
+    width: clamp(300px, 1200px, 100%);
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    width: clamp(300px, 1400px, 100%);
+    box-sizing: border-box;
+}
+
+.wrapper {
+    flex-flow: column;
+}
+
+.aysa-wizard-header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#wpbody-content a:focus {
+    box-shadow: none;
+}

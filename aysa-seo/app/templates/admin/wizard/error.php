@@ -1,0 +1,1 @@
+<div class="notice notice-error is-dismissible"><p><?= $error ?></p></div>

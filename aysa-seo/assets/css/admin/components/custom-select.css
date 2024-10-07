@@ -1,0 +1,137 @@
+.custom-select details {
+    position: relative;
+}
+
+.custom-select details[open] {
+    z-index: 1;
+}
+
+.custom-select input[type=radio] {
+    pointer-events: none;
+    background: white;
+    box-shadow: none;
+    border: none;
+    text-align: left;
+    margin: 0;
+    line-height: 1;
+}
+
+#wpbody-content .custom-select input[type=radio]:focus {
+    box-shadow: none;
+}
+
+.custom-select input[type=radio]:before {
+    display: none;
+}
+
+.custom-select summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid var(--border-color-gray);
+    background-color: white;
+    list-style: none;
+    position: relative;
+}
+
+.custom-select summary::-webkit-details-marker {
+    display: none;
+}
+
+.custom-select details[open] summary {
+    border-color: var(--main-green);
+    box-shadow: var(--box-shadow);
+    z-index: 2;
+}
+
+.custom-select summary:after {
+    content: '';
+    display: inline-block;
+    float: right;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid var(--main-green);
+    transform-origin: center center;
+    transition: transform ease-in-out 100ms;
+}
+
+.custom-select summary:focus {
+    outline: none;
+}
+
+.custom-select details[open] summary:after {
+    transform: scaleY(-1);
+}
+
+.custom-select details[open] ul {
+    z-index: 1;
+}
+
+.custom-select ul {
+    width: 100%;
+    position: absolute;
+    background: white;
+    top: calc(100% - .5rem);
+    left: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid var(--main-green);
+    box-shadow: var(--box-shadow);
+}
+
+.custom-select li {
+    margin: 0;
+    transition: .2s;
+}
+
+.custom-select li:hover {
+    background: lightgray;
+}
+
+.custom-select li:last-child {
+    border-bottom: none;
+}
+
+.custom-select summary.radios {
+    counter-reset: radios;
+}
+
+.custom-select summary.radios:before {
+    content: var(--selection);
+}
+
+.custom-select input[type=radio] {
+    counter-increment: radios;
+    appearance: none;
+    display: none;
+}
+
+.custom-select input[type=radio]:checked {
+    display: inline;
+    --display: block;
+}
+
+.custom-select input[type=radio]:after {
+    content: attr(title);
+    display: inline;
+    font-size: 14px;
+}
+
+.custom-select ul {
+    counter-reset: labels;
+}
+
+.custom-select label {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+    justify-content: space-between;
+}

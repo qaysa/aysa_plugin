@@ -1,0 +1,46 @@
+.meta-suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1 / span 3;
+}
+
+.meta-suggestions span {
+    text-overflow: ellipsis;
+    cursor: pointer;
+    word-break: break-all;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    width: 126px;
+    border-radius: 12px;
+    min-height: 30px;
+    padding: 5px 5px 0 5px;
+    color: #848689;
+    font-weight: 500;
+}
+
+.meta-suggestions span:hover {
+    overflow: visible;
+    width: 100%;
+}
+
+.meta-suggestions .meta-suggestion {
+    display: inline-flex;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.meta-suggestions .error-message span {
+    border: 1px solid var(--progress-no-padding-red);
+    background: rgba(219, 0, 56, 0.13);
+}
+
+.meta-suggestions .warning-message span {
+    border: 1px solid var(--progress-no-padding-yellow);
+    background: rgba(220, 159, 0, 0.13);
+}
+
+.meta-suggestions .success-massage span {
+    border: 1px solid var(--progress-no-padding-green);
+    background: rgba(8, 163, 147, 0.13);
+}

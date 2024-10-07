@@ -1,0 +1,78 @@
+.select-with-search .selection .select2-selection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid var(--border-color-gray);
+    background-color: white;
+    list-style: none;
+    position: relative;
+    font-size: 14px;
+}
+
+.select-with-search .select2-container .select2-selection .select2-selection__rendered {
+    padding-left: unset;
+    pointer-events: none;
+    background: white;
+    box-shadow: none;
+    border: none;
+    text-align: left;
+    margin: 0;
+    line-height: 1;
+}
+
+.aysa-ai_page_aysa-wizard .select2-results ul[role="listbox"] {
+    width: 100%;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid var(--main-green);
+    box-shadow: var(--box-shadow);
+}
+
+.aysa-ai_page_aysa-wizard .select2-results li:not([role="group"]) {
+    margin: 0;
+    transition: .2s;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.aysa-ai_page_aysa-wizard .select2-results li:not([role="group"]):hover {
+    background: lightgray;
+    color: #0b0b0b;
+}
+
+.aysa-ai_page_aysa-wizard .select2-search input:focus{
+    border: 1px solid var(--main-green);
+    box-shadow: var(--box-shadow);
+}
+
+.aysa-ai_page_aysa-wizard .select2-container--default .select2-selection--single .select2-selection__arrow b{
+    content: '';
+    display: inline-block;
+    float: right;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent !important;
+    border-right: 8px solid transparent !important;
+    border-top: 8px solid var(--main-green) !important;
+    transform-origin: center center;
+    transition: transform ease-in-out 100ms;
+}
+.aysa-ai_page_aysa-wizard .select2-container--default .select2-selection--single .select2-selection__arrow {
+    margin-right: 20px;
+    top: 2px
+}
+.aysa-ai_page_aysa-wizard  .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    transform: scaleY(-1);
+    border-width: 0;
+    border-color: unset;
+}
